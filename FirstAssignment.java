@@ -6,7 +6,7 @@ public class FirstAssignment {
 
     private String carsModel;
     private String carsMake;
-    private int  carPrice;
+    private double carPrice;
     Scanner scanner = new Scanner(System.in);
 
     public FirstAssignment(){
@@ -16,8 +16,9 @@ public class FirstAssignment {
         System.out.println("Please put car make");
         this.carsMake = scanner.nextLine();
         System.out.println("Please put car price");
-        this.carPrice = scanner.nextInt();
+        this.carPrice = scanner.nextDouble();
         System.out.println("NextCar");
+        printDetails();
 
     }
 
@@ -29,10 +30,8 @@ public class FirstAssignment {
         FirstAssignment car1 = new FirstAssignment();
         FirstAssignment car2 = new FirstAssignment();
         FirstAssignment car3 = new FirstAssignment();
-        car1.printDetails();
-        car2.printDetails();
-        car3.printDetails();
-        System.out.println("Average prices of cars = RM" + (car1.carPrice + car2.carPrice + car3.carPrice)/3);
+        double total = (car1.carPrice + car2.carPrice + car3.carPrice)/3;
+        System.out.printf("Average prices of cars = RM %.2f", total);
 
     }
     public void printDetails(){
