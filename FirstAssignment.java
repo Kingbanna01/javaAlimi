@@ -35,9 +35,9 @@ public class FirstAssignment {
         System.out.printf("Average prices of cars = RM %.2f%n", total);
 
 
-        System.out.println("Choose 1 for car1");
-        System.out.println("Choose 2 for car2");
-        System.out.println("Choose 3 for car3");
+        System.out.println("Choose 1 to check car1 is VIP or not");
+        System.out.println("Choose 2 to check car1 is VIP or not");
+        System.out.println("Choose 3 to check car1 is VIP or not");
 
         int whichCar = scanner.nextInt();
 
