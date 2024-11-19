@@ -7,7 +7,6 @@ public class FirstAssignment {
     private final String carsModel;
     private final String carsMake;
     private final double carPrice;
-    public int whichcar;
     Scanner scanner = new Scanner(System.in);
 
     public FirstAssignment(){
